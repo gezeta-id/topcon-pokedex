@@ -1,0 +1,21 @@
+<div *ngIf="pokemon" class="card">
+    <div class="header">
+        <img src="{{pokemon.details?.imageUrl}}" width="96px" />
+        <span class="name">{{pokemon.name}}</span>
+    </div>
+
+    <table class="info">
+        <tr>
+            <td>Weight:</td>
+            <td class="right">{{pokemon.details?.weight}}</td>
+        </tr>
+        <tr>
+            <td>Height:</td>
+            <td class="right">{{pokemon.details?.height}}</td>
+        </tr>
+        <tr>
+            <td>Types:</td>
+            <td class="right">{{pokemon.details?.types?.join(", ")}}</td>
+        </tr>
+    </table>
+</div>

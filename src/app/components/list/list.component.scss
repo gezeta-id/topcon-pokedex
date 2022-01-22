@@ -1,0 +1,18 @@
+@import "../../../assets/styles/variables.scss";
+
+
+ul.pokemon-list {
+    list-style-type: none;
+    width: 800px;
+    margin: 0 auto;
+    li {
+        display: inline-block;
+        width: 175px;
+        text-align: center;
+        height: 34px;
+        line-height: 30px;
+        margin: 5px;
+        border-radius: 8px;
+        border: 2px solid $mainColor;
+    }
+}
